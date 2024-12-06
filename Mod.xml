@@ -1,0 +1,11 @@
+<Header>
+  <Name>PMDO Revert</Name>
+  <Author>Logical123</Author>
+  <Description>This mod aims to revert PMDO's rules to make it more like Vanilla PMD.</Description>
+  <Namespace>revertrules</Namespace>
+  <UUID>F6E8843C-DE01-44C0-8461-ECF3B5563073</UUID>
+  <Version>0.1</Version>
+  <GameVersion>0.8.7.0</GameVersion>
+  <ModType>Mod</ModType>
+  <Relationships />
+</Header>

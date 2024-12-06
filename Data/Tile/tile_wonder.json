@@ -1,0 +1,372 @@
+﻿{
+"Version": "0.8.7.0",
+"Object": {
+"$type": "RogueEssence.Data.TileData, RogueEssence",
+"Name": {
+"DefaultText": "Wonder Tile",
+"LocalTexts": {
+"fr": "Case Miracle",
+"de": "Wunderfeld",
+"es": "Baldosa Mágica",
+"ko": "이상한 마루",
+"zh-hans": "不可思议地板"
+}
+},
+"Desc": {
+"DefaultText": "Stepping on this curious floor tile, found in many dungeons, restores the Pokémon's Attack, Defense, and other stats to normal levels, whether they're reduced or boosted.",
+"LocalTexts": {
+"fr": "Une étrange cases présente dans beaucoup de donjon. Marcher dessus réinitialise les stats du Pokémon.",
+"de": "Ein merkwürdiges Feld, das man in vielen Dungeons findet. Tritt ein Pokémon darauf, werden Statuswerte, wenn sie erhöht oder gesenkt waren, wieder auf den normalen Stand gesetzt.",
+"es": "Una extraña baldosa que se ve en varias mazmorras. Al activarla reinicia las estadísticas de los Pokémon cercanos si están reducidos o aumentados.",
+"ko": "많은 던전에서 보이는 이상한 타일. 작동하면 근처 포켓몬의 능력치를 원래대로 되돌린다.",
+"zh-hans": "在许多迷宫中都能找到这个奇特的地板。触发后，附近宝可梦的能力变化都会恢复至正常水平。"
+}
+},
+"Released": true,
+"Comment": "Description has been changed from PMDO to PMDEOTDS.\r\nEffects are more reminescent of the Vanilla games.\r\n\r\nBug: Can't trigger tile while stepping on it.",
+"Anim": {
+"AnimIndex": "Tile_Wonder",
+"FrameTime": 1,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"Offset": {
+"X": 0,
+"Y": 0
+},
+"Layer": 0,
+"BlockItem": true,
+"StepType": 3,
+"MinimapIcon": {
+"X": 2,
+"Y": 0
+},
+"MinimapColor": "0, 255, 255, 255",
+"LandedOnTiles": [
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.TriggerUnderfootEvent, PMDC"
+}
+}
+],
+"InteractWithTiles": [
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.InvokeTrapEvent, PMDC",
+"HitboxAction": {
+"$type": "RogueEssence.Dungeon.SelfAction, RogueEssence",
+"CharAnimData": {
+"$type": "RogueEssence.Dungeon.CharAnimProcess, RogueEssence",
+"Process": 0,
+"AnimOverride": 0
+},
+"TargetAlignments": 1,
+"TileEmitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"PreActions": [],
+"ActionFX": {
+"Delay": 0,
+"Sound": "DUN_Tile_Step",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+},
+"LagBehindTime": 0
+},
+"Explosion": {
+"TargetAlignments": 1,
+"HitTiles": false,
+"Range": 0,
+"Speed": 0,
+"TileEmitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyCircleSquareEmitter, RogueEssence",
+"LocHeight": 0
+},
+"IntroFX": [],
+"ExplodeFX": {
+"Delay": 0,
+"Sound": "",
+"Emitter": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+}
+},
+"NewData": {
+"Element": "none",
+"Category": 0,
+"HitRate": -1,
+"SkillStates": [],
+"BeforeTryActions": [
+{
+"Key": {
+"str": [
+-3
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.CategoryAddRangeEvent, PMDC",
+"Category": 0,
+"Range": -1
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_speed",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_accuracy",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_attack",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_defense",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_evasion",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_special_attack",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+},
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.StatusNeededEvent, PMDC",
+"StatusID": "mod_special_defense",
+"Message": {
+"Key": "BASE_STAT"
+}
+}
+}
+],
+"BeforeActions": [],
+"OnActions": [],
+"BeforeExplosions": [],
+"BeforeHits": [],
+"OnHits": [
+{
+"Key": {
+"str": [
+0
+]
+},
+"Value": {
+"$type": "PMDC.Dungeon.RemoveStateStatusBattleEvent, PMDC",
+"States": [
+{
+"assembly": "PMDC, Version=0.8.7.0, Culture=neutral, PublicKeyToken=null",
+"type": "PMDC.Dungeon.StatChangeState"
+}
+],
+"AffectTarget": true,
+"Msg": {
+"Key": "MSG_BUFF_REMOVE"
+},
+"Anims": [
+{
+"Emitter": {
+"$type": "RogueEssence.Content.FiniteAreaEmitter, RogueEssence",
+"LocHeight": 0,
+"Anims": [
+{
+"$type": "RogueEssence.Content.EmittingAnim, RogueEssence",
+"ResultAnim": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"Layer": 0,
+"Anim": {
+"AnimIndex": "Circle_Small_Blue_In",
+"FrameTime": 1,
+"StartFrame": -1,
+"EndFrame": -1,
+"AnimDir": -1,
+"Alpha": 255,
+"AnimFlip": 0
+},
+"TotalTime": 9,
+"Cycles": 0,
+"FrameOffset": 0
+}
+],
+"Range": 0,
+"Speed": 20,
+"TotalParticles": 1,
+"Layer": 2
+},
+"Sound": "DUN_Wonder_Tile",
+"AffectTarget": false,
+"Delay": 10
+}
+]
+}
+}
+],
+"OnHitTiles": [],
+"AfterActions": [],
+"ElementEffects": [],
+"IntroFX": [],
+"HitFX": {
+"Delay": 0,
+"Sound": "",
+"Emitter": {
+"$type": "RogueEssence.Content.SingleEmitter, RogueEssence",
+"LocHeight": 0,
+"finished": false,
+"Offset": 0,
+"Anim": {
+"$type": "RogueEssence.Content.EmptyFiniteEmitter, RogueEssence",
+"LocHeight": 0
+},
+"Layer": 2,
+"UseDest": false
+},
+"ScreenMovement": {
+"MinShake": 0,
+"MaxShake": 0,
+"MaxShakeTime": 0
+}
+},
+"HitCharAction": {
+"$type": "RogueEssence.Dungeon.CharAnimProcess, RogueEssence",
+"Process": 0,
+"AnimOverride": 0
+}
+},
+"Message": {
+"Key": "MSG_TILE_CHECK"
+},
+"OneTime": false
+}
+}
+],
+"OnEquips": [],
+"OnPickups": [],
+"BeforeStatusAdds": [],
+"BeforeStatusAddings": [],
+"OnStatusAdds": [],
+"OnStatusRemoves": [],
+"OnMapStatusAdds": [],
+"OnMapStatusRemoves": [],
+"OnMapStarts": [],
+"OnTurnStarts": [],
+"OnTurnEnds": [],
+"OnMapTurnEnds": [],
+"OnWalks": [],
+"OnDeaths": [],
+"OnRefresh": [],
+"BeforeTryActions": [],
+"BeforeActions": [],
+"OnActions": [],
+"BeforeHittings": [],
+"BeforeBeingHits": [],
+"AfterHittings": [],
+"AfterBeingHits": [],
+"OnHitTiles": [],
+"AfterActions": [],
+"UserElementEffects": [],
+"TargetElementEffects": [],
+"ModifyHPs": [],
+"RestoreHPs": []
+}
+}

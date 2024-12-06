@@ -1,0 +1,51 @@
+﻿{
+"Version": "0.8.7.0",
+"Object": {
+"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
+"tile_wonder": {
+"Name": {
+"DefaultText": "Wonder Tile",
+"LocalTexts": {
+"fr": "Case Miracle",
+"de": "Wunderfeld",
+"es": "Baldosa Mágica",
+"ko": "이상한 마루",
+"zh-hans": "不可思议地板"
+}
+},
+"Released": true,
+"Comment": "Description has been changed from PMDO to PMDEOTDS.\r\nEffects are more reminescent of the Vanilla games.\r\n\r\nBug: Can't trigger tile while stepping on it.",
+"SortOrder": 0
+},
+"trap_apple": {
+"Name": {
+"DefaultText": "Apple Trap",
+"LocalTexts": {
+"fr": "Piège Pomme",
+"de": "Apfel-Falle",
+"es": "Trampa Manzana",
+"ko": "사과 함정",
+"zh-hans": "苹果陷阱"
+}
+},
+"Released": true,
+"Comment": "",
+"SortOrder": 0
+},
+"trap_chestnut": {
+"Name": {
+"DefaultText": "Chestnut Trap",
+"LocalTexts": {
+"fr": "Piège Châtaigne",
+"de": "Kastanien-Falle",
+"es": "Trampa Castañazo",
+"ko": "밤송이 스위치",
+"zh-hans": "刺栗陷阱"
+}
+},
+"Released": true,
+"Comment": "",
+"SortOrder": 0
+}
+}
+}
