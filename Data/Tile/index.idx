@@ -44,6 +44,21 @@
 }
 },
 "Released": true,
+"Comment": "#Changed to deal Flat Damage (10)",
+"SortOrder": 0
+},
+"trap_gust": {
+"Name": {
+"DefaultText": "Gust Trap",
+"LocalTexts": {
+"fr": "Piège Ventilo",
+"de": "Wirbel-Falle",
+"es": "Trampa Tornado",
+"ko": "돌풍 스위치",
+"zh-hans": "吹风陷阱"
+}
+},
+"Released": true,
 "Comment": "",
 "SortOrder": 0
 }
