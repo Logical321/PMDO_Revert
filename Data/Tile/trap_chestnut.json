@@ -203,7 +203,7 @@
 }
 },
 "Message": {
-"Key": "MSG_TILE_CHECK"
+"Key": "MSG_TRAP"
 },
 "OneTime": false
 }

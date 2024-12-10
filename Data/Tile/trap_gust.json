@@ -116,7 +116,7 @@
 "LagBehindTime": 40
 },
 "Explosion": {
-"TargetAlignments": 0,
+"TargetAlignments": 1,
 "HitTiles": false,
 "Range": 0,
 "Speed": 0,
@@ -162,11 +162,8 @@
 ]
 },
 "Value": {
-"$type": "PMDC.Dungeon.ThrowBackEvent, PMDC",
-"Distance": 10,
-"HitEvent": {
-"$type": "PMDC.Dungeon.DamageFormulaEvent, PMDC"
-}
+"$type": "PMDC.Dungeon.KnockBackEvent, PMDC",
+"Distance": 10
 }
 }
 ],
@@ -193,7 +190,7 @@
 }
 },
 "Message": {
-"Key": "MSG_TILE_CHECK"
+"Key": "MSG_TRAP"
 },
 "OneTime": false
 }

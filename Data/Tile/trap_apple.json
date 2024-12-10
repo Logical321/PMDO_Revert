@@ -13,7 +13,7 @@
 }
 },
 "Desc": {
-"DefaultText": "Triggering this trap turns a held-effect item into an apple.",
+"DefaultText": "Stepping on it changes an item in the Bag to a [color=#07DB05]Big Apple[color].",
 "LocalTexts": {
 "fr": "Le déclenchement de ce piège transforme un objet à effet maintenu en une pomme.",
 "de": "Wird diese Falle ausgelöst, wird ein Item, welches einen Effekt beim Tragen besitzt, in einen Apfel verwandelt.",
@@ -23,7 +23,7 @@
 }
 },
 "Released": true,
-"Comment": "",
+"Comment": "#Changed back.",
 "Anim": {
 "AnimIndex": "Trap_Apple",
 "FrameTime": 1,

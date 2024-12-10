@@ -1,9 +1,9 @@
 LIST OF THINGS I GOTTA FIX/MAKE WORK:
-       Needs a lot of fixing to even work as intended.        |               Stuff I think I can do easily.                  |                    Finished things.                                  | Working on: Traps
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Several Room-Clearing moves.                                          |  Most Physical Moves.                                       |  Wonder Tiles.                                              
-Gust Trap's odd behaviors.                                                 |   A lot of the items.                                             |                                                
-???                                                                                          |   Most traps.                                                        |                                                
+       Needs a lot of fixing to even work as intended.                                         |               Stuff I think I can do easily.                                 |                    Finished things.                    | Working on: Traps
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Several Room-Clearing moves.                                                                   |  Most Physical Moves.                                                        |  Wonder Tiles.                                              
+Gust Trap's odd behaviors.                                                                     |  A lot of the items.                                                         |                                                
+???                                                                                            |  Most traps.                                                                 |                                                
                                                                                                |                                                                              |                                                
                                                                                                |                                                                              |                                                
                                                                                                |                                                                              |                                                

@@ -61,4 +61,7 @@
   <data name="MSG_TILE_CHECK" xml:space="preserve">
     <value>{0} triggered the [color=#00FFFF]{1}[color]!</value>
   </data>
+  <data name="MSG_TRAP" xml:space="preserve">
+    <value>{0} triggered the [color=#D86A73]{1}[color]!</value>
+  </data>
 </root>
